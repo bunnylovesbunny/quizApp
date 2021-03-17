@@ -118,130 +118,179 @@ public class ExamCustomAdapter extends RecyclerView.Adapter<ExamCustomAdapter.Vi
         holder.buttonOpt4.setText(String.valueOf(optionFour.get(position)));
 
 
-//
-//        holder.buttonOpt1.setOnClickListener(new View.OnClickListener() {
-//           @Override
-//           public void onClick(View view) {
-//
-////               Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt1.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else{
-//                        holder.imageViewWrongOpt1.setVisibility(view.VISIBLE);
-//                        if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                            holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-//
-//                        }
-//                        else if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                            holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-//                        }
-//
-//                        else if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                            holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-//
-//                        }
-//
-//
-//                    }
-//
-//           }
-//       });
-//
-//        holder.buttonOpt2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-////                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt2.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                    holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-//
-//                }
-//                else{
-//                    holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
-//
-//                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
-//                    }
-//
-//                    else if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
-//                    }
-//
-//                }
-//
-//            }
-//        });
-//
-//
-//        holder.buttonOpt3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-////                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt3.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                    holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-//
-//                }
-//                else{
-//                    holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
-//
-//                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
-//                    }
-//                    else if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-//
-//                    }
-//
-//                    else if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
-//                    }
-//
-//                }
-//
-//            }
-//        });
-//
-//        holder.buttonOpt4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-////                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt4.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                    holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-//
-//                }
-//                else{
-//
-//                    holder.imageViewWrongOpt4.setVisibility(view.VISIBLE);
-//                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt4.setVisibility(view.VISIBLE);
-//                    }
-//
-//                    else if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
-//                        holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt4.setVisibility(view.VISIBLE);
-//                    }
-//
-//                }
-//
-//            }
-//        });
+//        holder.imageViewCorrectOpt1.setVisibility(View.GONE);
+//        holder.imageViewCorrectOpt2.setVisibility(View.GONE);
+//        holder.imageViewCorrectOpt3.setVisibility(View.GONE);
+//        holder.imageViewCorrectOpt4.setVisibility(View.GONE);
+//        holder.imageViewWrongOpt1.setVisibility(View.GONE);
+//        holder.imageViewWrongOpt2.setVisibility(View.GONE);
+//        holder.imageViewWrongOpt3.setVisibility(View.GONE);
+//        holder.imageViewWrongOpt4.setVisibility(View.GONE);
+
+        holder.imageViewCorrectOpt1.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt2.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt3.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt4.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.imageViewCorrectOpt1.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt2.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt3.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt4.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.imageViewCorrectOpt1.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt2.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt3.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt4.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.imageViewCorrectOpt1.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt2.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt3.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewCorrectOpt4.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+
+
+        holder.imageViewWrongOpt1.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt2.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt3.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt4.setVisibility(holder.buttonOpt1.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.imageViewWrongOpt1.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt2.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt3.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt4.setVisibility(holder.buttonOpt2.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.imageViewWrongOpt1.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt2.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt3.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt4.setVisibility(holder.buttonOpt3.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.imageViewWrongOpt1.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt2.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt3.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+        holder.imageViewWrongOpt4.setVisibility(holder.buttonOpt4.isActivated()? View.VISIBLE : View.GONE);
+
+        holder.buttonOpt1.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+
+//               Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt1.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
+                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
+
+                    }
+                    else{
+                        holder.imageViewWrongOpt1.setVisibility(view.VISIBLE);
+                        if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                            holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
+
+                        }
+                        else if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                            holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
+                        }
+
+                        else if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                            holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
+
+                        }
+
+
+                    }
+
+           }
+       });
+
+        holder.buttonOpt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt2.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
+                if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                    holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
+
+                }
+                else{
+                    holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
+
+                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
+
+                    }
+                    else if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
+//                        holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
+                    }
+
+                    else if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
+//                        holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
+                    }
+
+                }
+
+            }
+        });
+
+
+        holder.buttonOpt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt3.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
+                if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                    holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
+
+                }
+                else{
+                    holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
+
+                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
+//                        holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
+                    }
+                    else if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
+
+                    }
+
+                    else if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
+//                        holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
+                    }
+
+                }
+
+            }
+        });
+
+        holder.buttonOpt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+//                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt4.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
+                if(holder.buttonOpt4.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                    holder.imageViewCorrectOpt4.setVisibility(view.VISIBLE);
+
+                }
+                else{
+
+                    holder.imageViewWrongOpt4.setVisibility(view.VISIBLE);
+                    if(holder.buttonOpt1.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt1.setVisibility(view.VISIBLE);
+
+                    }
+                    else if(holder.buttonOpt2.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt2.setVisibility(view.VISIBLE);
+
+                    }
+
+                    else if(holder.buttonOpt3.getText().toString().trim().equals(holder.examAnswerTxt.getText().toString().trim()) ){
+                        holder.imageViewCorrectOpt3.setVisibility(view.VISIBLE);
+
+                    }
+
+                }
+
+            }
+        });
 
 
     }
@@ -286,171 +335,13 @@ public class ExamCustomAdapter extends RecyclerView.Adapter<ExamCustomAdapter.Vi
             imageViewWrongOpt4 = itemView.findViewById(R.id.imageViewWrongOpt4);
 
             this.onNoteListener = onNoteListener;
-//            buttonOpt1.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//
-//               Toast.makeText(view.getContext()," Button 1: "+ buttonOpt1.getText()+"\n"+ " Answer: "+ examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                    if(buttonOpt1.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                        imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else{
-//                        imageViewWrongOpt1.setVisibility(view.VISIBLE);
-//                        if(buttonOpt2.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-//
-//                        }
-//                        else if(buttonOpt3.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-//                        }
-//
-//                        else if(buttonOpt4.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-//
-//                        }
-//
-//
-//                    }
-//
-//                }
-//            });
 
-//            buttonOpt2.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//
-////                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt2.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                    if(buttonOpt2.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                        imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else{
-//                        imageViewWrongOpt2.setVisibility(view.VISIBLE);
-//
-//                        if(buttonOpt1.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-//
-//                        }
-//                        else if(buttonOpt3.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
-//                        }
-//
-//                        else if(buttonOpt4.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                           imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt2.setVisibility(view.VISIBLE);
-//                        }
-//
-//                    }
-//
-//                }
-//            });
-
-
-//            buttonOpt3.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//
-////                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt3.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                    if(buttonOpt3.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                        imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else{
-//                        imageViewWrongOpt3.setVisibility(view.VISIBLE);
-//
-//                        if(buttonOpt1.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
-//                        }
-//                        else if(buttonOpt2.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                           imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-//
-//                        }
-//
-//                        else if(buttonOpt4.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt3.setVisibility(view.VISIBLE);
-//                        }
-//
-//                    }
-//
-//                }
-//            });
-
-//          buttonOpt4.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//
-////                Toast.makeText(view.getContext()," Button 1: "+ holder.buttonOpt4.getText()+"\n"+ " Answer: "+ holder.examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-//                    if(buttonOpt4.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                       imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-//
-//                    }
-//                    else{
-//
-//                       imageViewWrongOpt4.setVisibility(view.VISIBLE);
-//                        if(buttonOpt1.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                           imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-//
-//                        }
-//                        else if(buttonOpt2.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt4.setVisibility(view.VISIBLE);
-//                        }
-//
-//                        else if(buttonOpt3.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-//                            imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-////                        holder.imageViewWrongOpt4.setVisibility(view.VISIBLE);
-//                        }
-//
-//                    }
-//
-//                }
-//            });
-//          itemView.setOnClickListener(this);
-            buttonOpt1.setOnClickListener(this);
-            buttonOpt2.setOnClickListener(this);
-            buttonOpt3.setOnClickListener(this);
-            buttonOpt4.setOnClickListener(this);
-
-
-
-            buttonOpt1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-               Toast.makeText(view.getContext()," Button 1: "+ buttonOpt1.getText()+"\n"+ " Answer: "+ examAnswerTxt.getText(),Toast.LENGTH_LONG ).show();
-                    if(buttonOpt1.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-                        imageViewCorrectOpt1.setVisibility(view.VISIBLE);
-
-                    }
-                    else{
-                        imageViewWrongOpt1.setVisibility(view.VISIBLE);
-                        if(buttonOpt2.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-                            imageViewCorrectOpt2.setVisibility(view.VISIBLE);
-
-                        }
-                        else if(buttonOpt3.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-                            imageViewCorrectOpt3.setVisibility(view.VISIBLE);
-                        }
-
-                        else if(buttonOpt4.getText().toString().trim().equals(examAnswerTxt.getText().toString().trim()) ){
-                            imageViewCorrectOpt4.setVisibility(view.VISIBLE);
-
-                        }
-
-
-                    }
-
-                }
-            });
 
         }
 
         @Override
         public void onClick(View view) {
+
             onNoteListener.onNoteClick(getAdapterPosition());
         }
     }
